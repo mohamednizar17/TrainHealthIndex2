@@ -1,0 +1,88 @@
+version: '3.8'
+
+services:
+  # ==================== FRONTEND SERVICE ====================
+  frontend:
+    image: nginx:alpine
+    container_name: thi-frontend
+    ports:
+      - "8000:80"
+    volumes:
+      - ./TrainHealthIndex:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - backend
+    networks:
+      - thi-network
+    environment:
+      - NGINX_HOST=localhost
+      - NGINX_PORT=80
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/index.html"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+
+  # ==================== BACKEND SERVICE ====================
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: thi-backend
+    ports:
+      - "8001:8001"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - FASTAPI_HOST=0.0.0.0
+      - FASTAPI_PORT=8001
+    networks:
+      - thi-network
+    volumes:
+      - ./backend/train_data.json:/app/train_data.json:ro
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+    restart: unless-stopped
+
+  # ==================== PIPELINE SERVICE - DAGSTER UI ====================
+  pipeline:
+    build:
+      context: ./pipeline
+      dockerfile: Dockerfile
+    container_name: thi-pipeline
+    ports:
+      - "3000:3000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - DAGSTER_HOME=/app/dagster_home
+    networks:
+      - thi-network
+    volumes:
+      - ./sensor_data:/app/sensor_data
+      - ./pipeline/dagster_home:/app/dagster_home
+      - ./pipeline:/app
+    depends_on:
+      backend:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+    restart: unless-stopped
+
+networks:
+  thi-network:
+    driver: bridge
+
+volumes:
+  sensor_data:
+    driver: local
+  dagster_home:
+    driver: local
+

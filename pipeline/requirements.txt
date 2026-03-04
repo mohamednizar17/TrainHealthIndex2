@@ -1,0 +1,7 @@
+﻿# Pipeline dependencies with compatible versions to avoid Pendulum and watchdog issues
+dagster==1.7.0
+dagit==1.7.0
+pandas==2.2.0
+watchdog==4.0.0
+python-dateutil==2.8.2
+requests==2.31.0

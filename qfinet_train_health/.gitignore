@@ -1,0 +1,42 @@
+# Data files
+training_data.csv
+training_data_synthetic.csv
+
+# Model artifacts
+models/*.h5
+models/*.pkl
+models/*.onnx
+
+# Generated visualizations
+*.png
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Streamlit
+.streamlit/
+
+# Logs
+*.log

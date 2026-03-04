@@ -1,0 +1,12 @@
+Metric,QFINET,Traditional_CNN,Unit
+Accuracy,0.9260,0.9260,%
+Precision,0.9241,0.9241,%
+Recall,0.9260,0.9260,%
+F1-Score,0.9245,0.9245,%
+Training Time,12.3662,6.6204,seconds
+Time per Epoch,0.5621,0.2452,seconds
+Epochs Trained,22,27,count
+Model Size,0.5586,0.3113,MB
+Parameters,39331,23235,count
+Inference Latency,43.2528,45.3101,ms
+Inference Std Dev,2.2879,5.3107,ms

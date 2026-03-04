@@ -1,0 +1,9 @@
+2026-03-04 08:30:47 +0000 - dagster - DEBUG - sensor_data_pipeline - f2c19402-05bc-4fb4-8a53-eba73cb566c7 - 5058 - LOGS_CAPTURED - Started capturing logs in process (pid: 5058).
+2026-03-04 08:30:47 +0000 - dagster - DEBUG - sensor_data_pipeline - f2c19402-05bc-4fb4-8a53-eba73cb566c7 - 5058 - validate_data - STEP_START - Started execution of step "validate_data".
+2026-03-04 08:30:48 +0000 - dagster - DEBUG - sensor_data_pipeline - f2c19402-05bc-4fb4-8a53-eba73cb566c7 - validate_data - Loading file from: /app/dagster_home/storage/f2c19402-05bc-4fb4-8a53-eba73cb566c7/create_dataframe/result using PickledObjectFilesystemIOManager...
+2026-03-04 08:30:48 +0000 - dagster - DEBUG - sensor_data_pipeline - f2c19402-05bc-4fb4-8a53-eba73cb566c7 - 5058 - validate_data - LOADED_INPUT - Loaded input "df" using input manager "io_manager", from output "result" of step "create_dataframe"
+2026-03-04 08:30:48 +0000 - dagster - DEBUG - sensor_data_pipeline - f2c19402-05bc-4fb4-8a53-eba73cb566c7 - 5058 - validate_data - STEP_INPUT - Got input "df" of type "DataFrame". (Type check passed).
+2026-03-04 08:30:48 +0000 - dagster - DEBUG - sensor_data_pipeline - f2c19402-05bc-4fb4-8a53-eba73cb566c7 - 5058 - validate_data - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-03-04 08:30:48 +0000 - dagster - DEBUG - sensor_data_pipeline - f2c19402-05bc-4fb4-8a53-eba73cb566c7 - validate_data - Writing file at: /app/dagster_home/storage/f2c19402-05bc-4fb4-8a53-eba73cb566c7/validate_data/result using PickledObjectFilesystemIOManager...
+2026-03-04 08:30:48 +0000 - dagster - DEBUG - sensor_data_pipeline - f2c19402-05bc-4fb4-8a53-eba73cb566c7 - 5058 - validate_data - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-03-04 08:30:48 +0000 - dagster - DEBUG - sensor_data_pipeline - f2c19402-05bc-4fb4-8a53-eba73cb566c7 - 5058 - validate_data - STEP_SUCCESS - Finished execution of step "validate_data" in 336ms.

@@ -1,0 +1,11 @@
+{
+  "teacher_accuracy": 0.922,
+  "student_accuracy": 0.887,
+  "accuracy_drop": 0.03500000000000003,
+  "teacher_params": 39331,
+  "student_params": 3451,
+  "student_inference_ms": 43.53287935256958,
+  "student_inference_std_ms": 2.286139499973652,
+  "size_reduction_percent": 81.45315487571702,
+  "speedup_factor": 1.0
+}

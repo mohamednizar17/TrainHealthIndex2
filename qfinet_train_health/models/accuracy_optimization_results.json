@@ -1,0 +1,18 @@
+{
+  "single_model_accuracy": 0.9575,
+  "ensemble_accuracy": 0.954,
+  "individual_accuracies": [
+    0.9535,
+    0.949,
+    0.948
+  ],
+  "best_hyperparameters": {
+    "dropout1": 0.31469620878151305,
+    "dropout2": 0.260145039209535,
+    "conv_channels": 32,
+    "dense_units": 224,
+    "learning_rate": 0.006804383594989803
+  },
+  "data_augmentation_factor": 3,
+  "ensemble_size": 3
+}

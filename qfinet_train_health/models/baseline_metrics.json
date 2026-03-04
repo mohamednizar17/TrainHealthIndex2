@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-03-03T23:40:43.200965",
+  "qfinet": {
+    "total_time_seconds": 12.366171598434448,
+    "time_per_epoch": 0.5620987090197477,
+    "epochs_trained": 22,
+    "final_loss": 0.20102332532405853,
+    "final_val_loss": 0.1859859973192215,
+    "total_parameters": 39331,
+    "file_size_mb": 0.558624267578125,
+    "model_path": "models\\qfinet_baseline.h5",
+    "mean_latency_ms": 43.25284481048584,
+    "std_latency_ms": 2.2878849135731376,
+    "min_latency_ms": 39.56913948059082,
+    "max_latency_ms": 54.86130714416504,
+    "accuracy": 0.926,
+    "precision": 0.9240725948808471,
+    "recall": 0.926,
+    "f1_score": 0.9244652981427175
+  },
+  "traditional_cnn": {
+    "total_time_seconds": 6.620370626449585,
+    "time_per_epoch": 0.24519891209072536,
+    "epochs_trained": 27,
+    "final_loss": 0.19395564496517181,
+    "final_val_loss": 0.19730567932128906,
+    "total_parameters": 23235,
+    "file_size_mb": 0.3113250732421875,
+    "model_path": "models\\traditional_cnn_baseline.h5",
+    "mean_latency_ms": 45.31014442443848,
+    "std_latency_ms": 5.310744808310279,
+    "min_latency_ms": 40.77649116516113,
+    "max_latency_ms": 70.20854949951172,
+    "accuracy": 0.926,
+    "precision": 0.9240725948808471,
+    "recall": 0.926,
+    "f1_score": 0.9244652981427175
+  }
+}

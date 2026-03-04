@@ -1,0 +1,6 @@
+2026-03-03 11:25:07 +0000 - dagster - DEBUG - sensor_data_pipeline - c301489e-d8eb-41f2-a2e7-2cd0713e7dd9 - 1813 - LOGS_CAPTURED - Started capturing logs in process (pid: 1813).
+2026-03-03 11:25:07 +0000 - dagster - DEBUG - sensor_data_pipeline - c301489e-d8eb-41f2-a2e7-2cd0713e7dd9 - 1813 - fetch_train_list - STEP_START - Started execution of step "fetch_train_list".
+2026-03-03 11:25:07 +0000 - dagster - DEBUG - sensor_data_pipeline - c301489e-d8eb-41f2-a2e7-2cd0713e7dd9 - 1813 - fetch_train_list - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-03-03 11:25:07 +0000 - dagster - DEBUG - sensor_data_pipeline - c301489e-d8eb-41f2-a2e7-2cd0713e7dd9 - fetch_train_list - Writing file at: /app/dagster_home/storage/c301489e-d8eb-41f2-a2e7-2cd0713e7dd9/fetch_train_list/result using PickledObjectFilesystemIOManager...
+2026-03-03 11:25:07 +0000 - dagster - DEBUG - sensor_data_pipeline - c301489e-d8eb-41f2-a2e7-2cd0713e7dd9 - 1813 - fetch_train_list - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-03-03 11:25:07 +0000 - dagster - DEBUG - sensor_data_pipeline - c301489e-d8eb-41f2-a2e7-2cd0713e7dd9 - 1813 - fetch_train_list - STEP_SUCCESS - Finished execution of step "fetch_train_list" in 272ms.

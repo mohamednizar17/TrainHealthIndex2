@@ -1,0 +1,14 @@
+{
+  "mobile_keras_params": 1974,
+  "mobile_keras_accuracy": 0.863,
+  "mobile_keras_size_mb": 0.0837860107421875,
+  "mobile_tflite_size_mb": 0.0131378173828125,
+  "mobile_tflite_inference_ms": 8.5,
+  "pruned_keras_params": 1974,
+  "pruned_keras_accuracy": 0.846,
+  "pruned_keras_size_mb": 0.04016876220703125,
+  "pruned_tflite_size_mb": 0.01338958740234375,
+  "pruned_tflite_inference_ms": 7.65,
+  "compression_ratio": 97.60900224958148,
+  "target_device": "Raspberry Pi 4 (ARM Cortex-A72)"
+}
